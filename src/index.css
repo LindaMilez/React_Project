@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(245, 244, 244);
+}
+
+a {
+  color: rgb(89, 97, 206);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+h2 {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+h3 {
+  font-family: "Open Sans", serif;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", serif;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.app {
+  position: relative;
+}
+
+.header {
+  position: relative;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  box-sizing: border-box;
+  border-bottom: 4px solid rgb(14, 207, 136);
+  min-width: 1236px;
+}
+
+.app-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-nav {
+  position: absolute;
+  top: 10px;
+  left: 340px;
+}
+
+.app-nav > ul {
+  float: left;
+  list-style: none;
+  padding: 0px;
+}
+
+.app-nav > ul li {
+  float: left;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.account-nav {
+  position: absolute;
+  top: 10px;
+  right: 240px;
+}
+
+.account-nav > ul {
+  float: left;
+  list-style: none;
+  padding: 0px;
+}
+
+.account-nav > ul li {
+  float: left;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 13px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+
+  width: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  list-style: none;
+  padding: 0px;
+  width: 150px;
+  padding-right: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar li {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 4px;
+  background: linear-gradient(
+    30deg,
+    rgba(148, 0, 148, 1) 0%,
+    rgba(255, 50, 82, 1) 100%
+  );
+
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 600ms, color 100ms;
+}
+
+.sidebar > a:last-child li {
+  background: rgb(193, 0, 212);
+  background: linear-gradient(
+    30deg,
+    rgba(193, 0, 212, 1) 0%,
+    rgba(0, 205, 255, 1) 100%
+  );
+  color: white;
+}
+
+.content {
+  position: absolute;
+  height: 100px;
+  width: 80%;
+  left: 240px;
+  top: 25px;
+}
+
+.post {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+.post > h1 {
+  position: relative;
+  top: 10px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.post > h3 {
+  position: relative;
+  top: 10px;
+  margin: 0px;
+  font-weight: normal;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.post > p {
+  position: relative;
+  font-family: "Open Sans";
+  top: 10px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sign-in,
+.sign-up,
+.add-post {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+}
+
+.sign-in > h2,
+.sign-up > h2 {
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.signin-form > button {
+  color: rgb(255, 255, 255);
+  width: 80px;
+  padding: 12px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.signin-form,
+.signup-form {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  border-left: 1px solid;
+  top: 19px;
+  left: 140px;
+  padding-left: 20px;
+}
+
+.signup-form > input,
+.signup-form > button {
+  color: rgb(255, 255, 255);
+  width: 80px;
+  padding: 12px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-post > h2 {
+  margin: 0px;
+  padding: 10px;
+
+  color: rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.add-post-form {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  border-left: 1px solid;
+  top: 19px;
+  left: 190px;
+  padding-left: 20px;
+}
+
+#add-post-btn {
+  position: relative;
+  color: rgb(255, 255, 255);
+  width: 80px;
+  padding: 12px;
+  margin: 5px;
+  top: 4px;
+  background-color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+
+.add-post-list {
+  position: absolute;
+  width: 450px;
+  left: 20px;
+  top: 70px;
+  padding: 0px;
+}
+
+.add-post-list > li {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  font-size: 13px;
+  margin: 5px;
+  color: white;
+  display: inline-block;
+}
+
+.remove-btn {
+  position: relative;
+  float: right;
+  margin-left: 5px;
+  background-color: red;
+  padding: 1px;
+  width: 15px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.account-nav > h4 {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  width: 200px;
+  text-align: right;
+}
+
+.char-count {
+  position: relative;
+  height: 20px;
+  width: 150px;
+  text-align: center;
+  left: 2px;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 3px;
+  top: 2px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.delete-post-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.delete-post-btn > button {
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.error-popup {
+  position: absolute;
+  background-color: rgb(249, 212, 216);
+  height: 25px;
+  width: 600px;
+  font-size: 14px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(207, 74, 91);
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  z-index: 999;
+}
+
+.reset-error-btn {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  color: #fff;
+  background-color: black;
+  width: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.input-box,
+.input-tags,
+.text-box,
+.list,
+.select-list {
+  position: relative;
+  width: 470px;
+  height: 20px;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: inline-block;
+  float: left;
+}
+
+.input-box > .label,
+.input-tags > .label,
+.text-box > .label,
+.list > .label,
+.select-list > .label {
+  position: absolute;
+  font-family: "Open Sans", serif;
+  top: 10px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-box > input,
+.list > input {
+  position: absolute;
+  top: 33px;
+  left: 10px;
+  width: 90%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.text-box {
+  display: inline;
+  height: max-content;
+}
+
+.text-box > textarea {
+  position: relative;
+  top: 10px;
+  height: 150px;
+  display: block;
+  left: 10px;
+  width: 95%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.select-list > select {
+  position: absolute;
+  left: 7px;
+  top: 35px;
+  width: 500px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 12px;
+  font-family: "Open Sans", serif;
+  border-radius: 0px;
+}
+
+.hasError {
+  border-color: red;
+}
+
+.hasError > .label {
+  color: red;
+}

@@ -1,0 +1,99 @@
+{
+  "posts": [
+    {
+      "authorId": 1,
+      "title": "Thoughts on JavaScript",
+      "categoriesId": "1",
+      "content": "I love a hot cuppa Java with my donuts. Particularly when I'm reading the script for my new movie. Java and Script, mmmm, delicious!",
+      "timestamp": "2019-11-28T11:01:45.948Z",
+      "id": 1
+    },
+    {
+      "authorId": 1,
+      "title": "Why React??",
+      "categoriesId": "2",
+      "content": "Why do you have to React to everything? I mean all I said was that the reactor was gonna blow. What's the fuss about?",
+      "timestamp": "2019-11-28T11:04:06.440Z",
+      "id": 2
+    },
+    {
+      "authorId": 1,
+      "title": "Java, eh?",
+      "categoriesId": "9",
+      "content": "Doh!",
+      "timestamp": "2019-11-28T11:04:43.915Z",
+      "id": 3
+    },
+    {
+      "authorId": 1,
+      "title": "This was funny",
+      "categoriesId": "3",
+      "content": "So, I saw this video on Youtube and this guy was teaching something called \"Naahd Daaht Jee Esss\". I mean, if you have to teach French, do it properly!",
+      "timestamp": "2019-11-28T11:06:09.350Z",
+      "id": 4
+    },
+    {
+      "authorId": 1,
+      "title": "React Hooks",
+      "categoriesId": "2",
+      "content": "So React has introduced a superb new way to empower function components with state, side effects and other things. ",
+      "timestamp": "2020-03-30T10:32:26.418Z",
+      "id": 5
+    }
+  ],
+  "authors": [
+    {
+      "password": "$2b$10$/MR28AAVtvOL4eQkMimtvezwTzOve4BSDxNtd9ST9rYYjnhfp9Ayi",
+      "email": "homer@springfield.com",
+      "name": "Homer Simpson",
+      "dateJoined": "2019-11-28T10:59:49.437Z",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "JavaScript"
+    },
+    {
+      "id": 2,
+      "title": "React"
+    },
+    {
+      "id": 3,
+      "title": "Node.js"
+    },
+    {
+      "id": 4,
+      "title": "React Router"
+    },
+    {
+      "id": 5,
+      "title": "Redux"
+    },
+    {
+      "id": 6,
+      "title": "GraphQL"
+    },
+    {
+      "id": 7,
+      "title": "HTML5"
+    },
+    {
+      "id": 8,
+      "title": "CSS3"
+    },
+    {
+      "id": 9,
+      "title": "Java"
+    },
+    {
+      "id": 10,
+      "title": "Python"
+    },
+    {
+      "id": 11,
+      "title": "Movies"
+    }
+  ]
+}
